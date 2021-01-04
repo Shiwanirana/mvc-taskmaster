@@ -18,9 +18,9 @@ addListItem(event, listId) {
 
 }
 
-handleChange(checkbox,id){
+handleChange(checkbox,id, listId){
   // let checkbox = document.getElementById("done")
-  itemService.handleChange(checkbox,id)
+  itemService.handleChange(checkbox,id,listId)
 }
 deleteListItem(itemId){
   if (window.confirm("Are you sure?")) {

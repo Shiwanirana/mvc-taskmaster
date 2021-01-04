@@ -24,14 +24,20 @@ class ItemService{
    
   }
  
-  handleChange(checkbox,id){
+  handleChange(checkbox,id,listId){
     console.log("checkbox")
     console.log(id)
-    complete++
-    document.getElementById("countComplete").innerHTML = complete
     // if(ProxyState.items = ProxyState.items.find(c=> c.id == itemId)){
-    //  for(let i=0; i<=checkbox.length; i++){
-    // if(checkbox[i].checked == true){
+      // for(let i=0; i<=checkbox.length; i++){
+        if(checkbox.checked == true && id==id && listId == listId){
+        complete++
+        document.getElementById("countComplete").innerHTML = complete
+        ProxyState.on("items",saveState)
+        }else if(checkbox.checked == false && id==id && listId == listId){
+          complete--
+          document.getElementById("countComplete").innerHTML = complete
+        // ProxyState.on("items",saveState)
+        }
     //    //if(ProxyState.items = ProxyState.items.find(c=> c.itemId == id)){
     //   document.getElementById("delButton").removeAttribute("disabled[i]")
     // } 
