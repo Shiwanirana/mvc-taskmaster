@@ -13,8 +13,9 @@ class ItemService{
     items.push(new Item(newListItemData))
     ProxyState.items = items
     // let list= ProxyState.lists.find(list => list.id==id)
-    
     total++
+    
+    
     document.getElementById("countTotal").innerHTML= total
     console.log(ProxyState.items)
     // let list = ProxyState.lists.find(list => list.id == listId)

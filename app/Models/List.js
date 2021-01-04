@@ -36,7 +36,7 @@ export default class List {
   <form class="no-outline" onsubmit="app.itemController.addListItem(event, '${this.id}')">
          <div class="form-group">
            <label for="listItemName">list Item:</label>
-           <input type="text" name="itemTitle" class="form-control w-50" placeholder="Add Task.." aria-describedby="helpId">
+           <input type="text" name="itemTitle" class="form-control w-50" placeholder="Add Task.." aria-describedby="helpId" minlength="3">
            <button type="submit" class="btn btn-outline-${this.color} btn-sm">+</button>
          </div>
       </form>
