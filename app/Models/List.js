@@ -8,8 +8,8 @@ export default class List {
     this.color = data.color
     this.listsItems = data.listsItems || []
     this.id = data.id || generateId();
-    this.total=0
-    this.complete=0
+    this.total=data.total || 0
+    this.complete=data.complete|| 0
   }
   //Be sure to add the methods needed to create the view template for this model
   //For starting out, your tasks may be strings alone, but later you may wish to turn them into full objects, that will be up to you

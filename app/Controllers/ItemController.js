@@ -12,7 +12,7 @@ addListItem(event, listId) {
     listId : listId,
     Completed : false
   }
-  itemService.addListItem(listItemData)
+  itemService.addListItem(listItemData,listId)
   // ListService.addListItem(formData.listItemName.value, listId)
   formData.reset()
 
